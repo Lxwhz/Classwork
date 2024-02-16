@@ -1,2 +1,2 @@
-number = (input("Please enter an integer:")
-print("You entered", number)
+x =  input('Please enter an integer:')
+print(12)
