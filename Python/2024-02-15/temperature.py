@@ -1,3 +1,3 @@
-celsius =  int(input("Please enter the temperature (in Celsius): "))
-fahrenheit = 32 * celsius + 32
-print(celsius,"degrees Celsius is the same as",fahrenheit, "degrees Fahrenheit!")
+c =  int(input("Please enter the temperature (in Celsius): "))
+f = int((9/5 * (c) + 32))
+print(c,"degrees Celsius is the same as",f,"degrees Fahrenheit!")
