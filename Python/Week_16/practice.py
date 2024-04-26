@@ -1,45 +1,18 @@
-# Bendjy
-# 4/22/2024
+# Bendjy St Paul
+# 2024-04-23
 
-a = input('Enter a name:')
-b = input('Enter a name:')
-c = input('Enter a name:')
-d = input('Enter a name:')
-e = input('Enter a name:')
-f = input('Enter a name:')
-g = input('Enter a name:')
-h = input('Enter a name:')
-i = input('Enter a name:')
-j = input('Enter a name:')
-k = input('Enter a name:')
-l = input('Enter a name:')
-m = input('Enter a name:')
-n = input('Enter a name:')
-o = input('Enter a name:')
-p = input('Enter a name:')
-q = input('Enter a name:')
-r = input('Enter a name:')
-s = input('Enter a name:')
-t = input('Enter a name:')
+Animate = ["Black clover","Dragon ball","Bleach"]
 
-print(f'Here are the names that you listed: {a}')
+# for + range + len
+for i in range(len(Animate)):
+    print(Animate[i])
 
-print(b)
-print(c)
-print(d)
-print(e)
-print(f)
-print(g)
-print(h)
-print(i)
-print(j)
-print(k)
-print(l)
-print(m)
-print(n)
-print(o)
-print(p)
-print(q)
-print(r)
-print(s)
-print(t)
+# While
+i = 0
+while i < (len(Animate)):
+    print(Animate[i])
+    i+=1
+
+# for
+for a in Animate:
+    print(a)
