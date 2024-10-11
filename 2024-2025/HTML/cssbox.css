@@ -1,0 +1,42 @@
+div {
+    border :2px black solid;
+}
+
+#first {
+    background-color: green;
+    padding: 50px ;
+    text-align: left;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#second {
+    background-color: chartreuse;
+    padding: 40px;
+}
+
+#third {
+    background-color: darkgreen;
+    padding: 30px;
+}
+
+#fourth {
+    background-color: lawngreen;
+    padding: 20px;
+}
+
+#fifth {
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+body {
+    background: beige;
+}
+
+main {
+    margin-left: 400px;
+}
