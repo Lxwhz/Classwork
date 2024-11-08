@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="TTEST.css">
+</head>
+<header>
+</header>
+<body>
+<main>
+    <form method="post" action="processTest.php">
+        <fieldset id="test">
+            <legend>Agile Phases</legend>
+            <label>Favorite Agile Phase:</label>
+            <select>
+                <option value="Concept">Concept</option>
+                <option value="Inception">Inception</option>
+                <option value="Iteration">Iteration</option>
+                <option value="Release">Release</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Retirement">Retirement</option>
+            </select>
+        </fieldset>
+        <fieldset id="layers">
+            <legend>Three Layer Applications</legend>
+            <h1>Choose Your Favorite Layer Application</h1>
+            <input type="radio" id="apps" name="application">
+            <label for="apps">Ui layer</label><br>
+            <input type="radio" id="apps2" name="application">
+            <label for="apps2">Logic Layer</label><br>
+            <input type="radio" id="apps3" name="application">
+            <label for="apps3">Database Layer</label><br>
+        </fieldset>
+        <fieldset id="roles">
+            <legend>Software Job Roles</legend>
+            <label for="job">Write/Choose Your Favorite Job Role</label>
+            <input list="job5"   id="job" type="text" name="Job_Role">
+            <datalist id="job5">
+                <option value="Front End Developer"></option>
+                <option value="Back End Developer"></option>
+                <option value="Database Developer"></option>
+            </datalist>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <h1>Page Made By Bendjy</h1>
+
+
+    </form>
+</main>
+</body>
+<footer>
+</footer>
+</html>
