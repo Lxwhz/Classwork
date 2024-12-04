@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+
+
+h1, tr, th, p {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+tr, th, p, h1, label {
+    color: indigo;
+}
+
+body {
+    background-color: ;
+}
+
+
+
