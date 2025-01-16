@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="calc.css">
+    <script>
+        document.addEventListener("DOMContentLoaded",(event)=> {
+            const button7 = document.getElementById("button7")
+            const button8 = document.getElementById("button8")
+            const button9 = document.getElementById("button9")
+            const buttonadd = document.getElementById("buttonadd")
+            const button4 = document.getElementById("button4")
+            const button5 = document.getElementById("button5")
+            const button6 = document.getElementById("button6")
+            const buttonsub = document.getElementById("buttonsub")
+            const button1 = document.getElementById("button1")
+            const button2 = document.getElementById("button2")
+            const button3 = document.getElementById("button3")
+            const buttonmulti = document.getElementById("buttonmulti")
+            const button0 = document.getElementById("button0")
+            const divide = document.getElementById("divide")
+            const display = document.getElementById("display")
+
+            button7.addEventListener("Click", (event) => {
+                display.value = "7" + display.value
+
+            })
+            button8.addEventListener("Click", (event) => {
+                display.value = "8" + display.value
+
+            })
+            button9.addEventListener("Click", (event) => {
+                display.value = "9" + display.value
+
+            })
+            buttonadd.addEventListener("Click", (event) => {
+
+
+            })
+            button4.addEventListener("Click", (event) => {
+                display.value = "4" + display.value
+
+            })
+            button5.addEventListener("Click", (event) => {
+                display.value = "5" + display.value
+
+            })
+            button6.addEventListener("Click", (event) => {
+                display.value = "6" + display.value
+
+            })
+            buttonsub.addEventListener("Click", (event) => {
+
+
+            })
+            button1.addEventListener("Click", (event) => {
+                display.value = "1" + display.value
+            })
+            button2.addEventListener("Click", (event) => {
+                display.value = "2" + display.value
+
+            })
+            button3.addEventListener("Click", (event) => {
+                display.value = "3" + display.value
+
+            })
+            buttonmulti.addEventListener("Click", (event) => {
+
+
+            })
+            button0.addEventListener("Click", (event) => {
+                display.value = "0" + display.value
+
+            })
+            divide.addEventListener("Click", (event) => {
+
+
+            })
+        })
+    </script>
+</head>
+<body>
+<input id="display" type="number"><br>
+<button id="button7" type="button">7</button>
+<button id="button8" type="button">8</button>
+<button id="button9" type="button">9</button>
+<button id="buttonadd" type="button">+</button><br>
+<button id="button4" type="button">4</button>
+<button id="button5" type="button">5</button>
+<button id="button6" type="button">6</button>
+<button  id="buttonsub"type="button">-</button><br>
+<button id="button1" type="button">1</button>
+<button id="button2" type="button">2</button>
+<button id="button3" type="button">3</button>
+<button id="buttonmulti" type="button">x</button><br>
+<button id="button0" type="button">0</button>
+<button id="divide" type="button">÷</button>
+
+
+
+</body>
+</html>
