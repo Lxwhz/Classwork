@@ -21,67 +21,101 @@
             const button0 = document.getElementById("button0")
             const divide = document.getElementById("divide")
             const display = document.getElementById("display")
+            const Enter = document.getElementById("equal")
+            let num1 ;
+            let num2 ;
+            let opp4 ;
+            let answer ;
 
-            button7.addEventListener("Click", (event) => {
-                display.value = "7" + display.value
-
-            })
-            button8.addEventListener("Click", (event) => {
-                display.value = "8" + display.value
-
-            })
-            button9.addEventListener("Click", (event) => {
-                display.value = "9" + display.value
+            button7.addEventListener("click", (event) => {
+                display.value = display.value + "7";
 
             })
-            buttonadd.addEventListener("Click", (event) => {
-
-
-            })
-            button4.addEventListener("Click", (event) => {
-                display.value = "4" + display.value
+            button8.addEventListener("click", (event) => {
+                display.value = display.value + "8";
 
             })
-            button5.addEventListener("Click", (event) => {
-                display.value = "5" + display.value
+            button9.addEventListener("click", (event) => {
+                display.value = display.value + "9";
 
             })
-            button6.addEventListener("Click", (event) => {
-                display.value = "6" + display.value
+            buttonadd.addEventListener("click", (event) => {
+                num1 = Number.parseFloat(display.value)
+                display.value = "";
+                opp4 = "add"
 
             })
-            buttonsub.addEventListener("Click", (event) => {
-
-
-            })
-            button1.addEventListener("Click", (event) => {
-                display.value = "1" + display.value
-            })
-            button2.addEventListener("Click", (event) => {
-                display.value = "2" + display.value
+            button4.addEventListener("click", (event) => {
+                display.value = display.value + "4";
 
             })
-            button3.addEventListener("Click", (event) => {
-                display.value = "3" + display.value
+            button5.addEventListener("click", (event) => {
+                display.value = display.value +  "5";
 
             })
-            buttonmulti.addEventListener("Click", (event) => {
-
-
-            })
-            button0.addEventListener("Click", (event) => {
-                display.value = "0" + display.value
+            button6.addEventListener("click", (event) => {
+                display.value = display.value + "6";
 
             })
-            divide.addEventListener("Click", (event) => {
+            buttonsub.addEventListener("click", (event) => {
+                display.value = display.value + "-";
+                num1 = Number.parseFloat(display.value)
+                display.value = "";
+                opp4 = "subtract"
+            })
+            button1.addEventListener("click", (event) => {
+                display.value = display.value + "1";
+            })
+            button2.addEventListener("click", (event) => {
+                display.value = display.value + "2";
 
+            })
+            button3.addEventListener("click", (event) => {
+                display.value = display.value + "3";
+
+            })
+            buttonmulti.addEventListener("click", (event) => {
+                display.value = display.value + "x";
+                num1 = Number.parseFloat(display.value)
+                display.value = "";
+                opp4 = "mult"
+            })
+            button0.addEventListener("click", (event) => {
+                display.value = display.value + "0";
+
+            })
+            divide.addEventListener("click", (event) => {
+                display.value = display.value + "÷";
+                num1 = Number.parseFloat(display.value)
+                display.value = "";
+                opp4 = "divide"
+            })
+
+            Enter.addEventListener("click", (event) => {
+                num2 = Number.parseFloat(display.value)
+                // console.log(num2)
+                // console.log(typeof num2)
+                display.value = "";
+                if (opp4 == "add"){
+                    answer = num1 + num2;
+                    display.value = answer;
+                } else if (opp4 == "subtract"){
+                    answer = num1 - num2;
+                    display.value =  answer;
+                } else if (opp4 == "mult"){
+                    answer = num1 * num2;
+                    display.value = answer
+                } else if (opp4 == "divide"){
+                    answer = num1 / num2;
+                    display.value = answer
+                }
 
             })
         })
     </script>
 </head>
 <body>
-<input id="display" type="number"><br>
+<input id="display" type="text"><br>
 <button id="button7" type="button">7</button>
 <button id="button8" type="button">8</button>
 <button id="button9" type="button">9</button>
@@ -95,7 +129,8 @@
 <button id="button3" type="button">3</button>
 <button id="buttonmulti" type="button">x</button><br>
 <button id="button0" type="button">0</button>
-<button id="divide" type="button">÷</button>
+<button id="divide" type="button">÷</button><br>
+<button id="equal" type="button">Enter</button>
 
 
 
