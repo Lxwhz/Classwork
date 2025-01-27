@@ -6,5 +6,37 @@
 </head>
 <body>
 
+<script>
+  document.addEventListener("DOMContentLoaded",(evt)=> {
+    console.log("page loaded")
+
+    const save_button = document.getElementById("saveBtn");
+    console.log(save_button);
+
+    const text_output = document.getElementById("output");
+    console.log(text_output);
+
+    const set_button = document.getElementById("setBtn");
+    console.log(set_button);
+
+
+    save_button.addEventListener("click", (evt) => {
+      console.log("User clicked on save button")
+    })
+
+    set_button.addEventListener("click", (evt) => {
+      console.log("User clicked on set button")
+    })
+
+    const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
+
+
+
+
+    for (let index = 1;index < 12; index++){
+      console.log("Number is: " + index);
+    }
+  })
+</script>
 </body>
 </html>
