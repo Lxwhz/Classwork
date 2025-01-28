@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="../2024-2025/HTML/calc.css">
     <script>
         document.addEventListener("DOMContentLoaded",(event)=> {
             const buttons = document.getElementById("buttons")
             const operations = document.getElementById("operations")
             const display = document.getElementById("display")
             const Enter = document.getElementById("equal")
-            let num1 ;
-            let num2 ;
-            let opp4 ;
-            let answer ;
+
+            let num1;
+            let num2;
+            let opp4;
+            let answer;
 
             buttons.addEventListener("click",(event)=>{
                 console.log(event.target.textContent)

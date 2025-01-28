@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles/gradie.css">
+<!--    <link rel="stylesheet" href="styles/gradie.css">-->
 </head>
 <body>
 <script>
-    class Buildings {
-        constructor(houses) {
-            this.housename = brand;
+    class Fool {
+        constructor(name) {
+            this.name = name;
+        }
+
+        getNameSeparator() {
+            return '-';
         }
     }
+
+    class Wool extends Fool {
+        constructor(name, index) {
+            super(name);
+            this.index = index;
+        }
+
+        getNameSeparator() {
+            return '/';
+        }
+
+        getFullName() {
+            return this.name + super.getNameSeparator() + this.index;
+        }
+    }
+
+    const firstFooBar = new Wool('Fool', 1);
+    console.log(firstFooBar.name);
+    console.log(firstFooBar.getFullName());
 </script>
 </body>
 </html>
