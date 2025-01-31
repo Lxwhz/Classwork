@@ -1,0 +1,21 @@
+#test {
+    border: 3px solid black;
+    background-color: lightcoral;
+}
+
+#layers {
+    border: 3px solid black;
+    background-color: lightblue;
+}
+
+
+#roles {
+    border: 3px solid black;
+    background-color: peru;
+}
+
+
+legend {
+    border: 3px solid black;
+    background-color: snow;
+}

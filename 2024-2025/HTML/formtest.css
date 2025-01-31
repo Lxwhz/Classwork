@@ -1,0 +1,14 @@
+#smth {
+    background-color: navajowhite;
+    margin: 30px 0px;
+}
+
+fieldset {
+    background-color: navajowhite;
+    border: 3px solid black;
+}
+
+legend {
+    border: 3px solid black;
+    border-style: groove;
+}
