@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../2024-2025/HTML/calc.css">
+    <link rel="stylesheet" href="styles/calc.css">
     <script>
         document.addEventListener("DOMContentLoaded",(event)=> {
             const buttons = document.getElementById("buttons")
@@ -54,8 +54,9 @@
     </script>
 </head>
 <body>
-<input id="display" type="text"><br>
-<div id="buttons">
+
+<section id="buttons">
+    <input id="display" type="text"><br>
     <button id="button7" type="button">0</button>
     <button id="button8" type="button">1</button>
     <button id="button9" type="button">2</button>
@@ -66,17 +67,13 @@
     <button id="button2" type="button">7</button>
     <button id="button3" type="button">8</button>
     <button id="button0" type="button">9</button>
-</div>
-<div id="operations">
     <button id="buttonadd" type="button" value="add">+</button>
     <button  id="buttonsub"type="button" value="subtract">-</button>
     <button id="buttonmulti" type="button" value="mult">x</button>
     <button id="divide" type="button" value="divide">÷</button>
-</div>
-<button id="equal" type="button">Enter</button>
-<button id="AC" type="button">AC</button>
-
-
+    <button id="equal" type="button">Enter</button>
+    <button id="AC" type="button">AC</button>
+</section>
 
 </body>
 </html>
