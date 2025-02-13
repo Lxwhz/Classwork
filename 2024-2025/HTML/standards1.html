@@ -4,36 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="standards1.css">
+
     <script>
-        document.addEventListener("DOMContentLoaded",(evt)=> {
-            console.log("page loaded")
+        document.addEventListener("DOMContentLoaded",(event)=>{
+            const buttonsave = document.getElementById("saveBtn")
+            let checkedInputs = [];
+            const output = document.getElementById("output")
 
-            const save_button = document.getElementById("saveBtn");
-            console.log(save_button);
-
-            const text_output = document.getElementById("output");
-            console.log(text_output);
-
-            const set_button = document.getElementById("setBtn");
-            console.log(set_button);
-
-
-            save_button.addEventListener("click", (evt) => {
-                console.log("User clicked on save button")
+            buttonsave.addEventListener("click",(event)=>{
+                checkedInputs = [];
+                const inputs = Array.from(document.getElementsByTagName("input"))
+                inputs.forEach((element)=>{
+                    if(element.checked) {
+                        let checked = {}
+                        checked["id"] = element.id
+                        console.log(checked)
+                        checkedInputs.push(checked)
+                    }
+                })
+                output.textContent = JSON.stringify(checkedInputs)
             })
-
-            set_button.addEventListener("click", (evt) => {
-                console.log("User clicked on set button")
-            })
-
-            const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
-
-
-
-
-            for (let index = 1;index < 12; index++){
-                console.log("Number is: " + index);
-            }
         })
     </script>
 </head>
@@ -104,7 +94,7 @@
 <input type="radio" id="1EA" name="1D" value="Advanced">
  <button type="submit" id="saveBtn">Save</button>
 <button type="submit" id="setBtn">Set</button>
-<p type="submit" id="output">Output</p>
+<p id="output">Output</p>
 
 
 </body>
