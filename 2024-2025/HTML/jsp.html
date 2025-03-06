@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", (evt)=>{
+            const name = document.getElementById("name")
+            const output = document.getElementById("output")
+            const submit = document.getElementById("submit")
+
+            submit.addEventListener("click",(event)=>{
+               const boom = "Hi, " +  name.value  + ", Type stuff?"
+                    output.textContent = boom
+                console.log(boom)
+            })
+        })
+    </script>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <p>Write your name</p>
+    <input type="text" id="name">
+    <label for="name"></label><br>
+    <button id="submit" type="submit">Submit</button>
+    <p id="output">Output</p>
+</main>
+</body>
+</html>

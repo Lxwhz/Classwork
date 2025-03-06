@@ -10,6 +10,7 @@
             const buttonsave = document.getElementById("saveBtn")
             let checkedInputs = [];
             const output = document.getElementById("output")
+            const reset = document.getElementById("resetBtn")
 
             buttonsave.addEventListener("click",(event)=>{
                 checkedInputs = [];
@@ -23,6 +24,13 @@
                     }
                 })
                 output.textContent = JSON.stringify(checkedInputs)
+            })
+
+            reset.addEventListener("click",(event)=>{
+                checkedInputs.textContent
+                JSON.parse
+                console.log(checkedInputs)
+
             })
         })
     </script>
@@ -85,15 +93,15 @@
 <p>1.e : Demonstrate safety practices and procedures associated with “Power strips,” “Surge/Spike Protectors,” or “Portable Outlets.”
 </p>
 <label for="1EE">Exposed</label>
-<input type="radio" id="1EE" name="1D" value="Exposed">
+<input type="radio" id="1EE" name="1E" value="Exposed">
 <label for="1EC">Competent</label>
-<input type="radio" id="1EC" name="1D" value="Competent">
+<input type="radio" id="1EC" name="1E" value="Competent">
 <label for="1EP">Proficient</label>
-<input type="radio" id="1EP" name="1D" value="Proficient">
+<input type="radio" id="1EP" name="1E" value="Proficient">
 <label for="1EA">Advanced</label>
-<input type="radio" id="1EA" name="1D" value="Advanced">
+<input type="radio" id="1EA" name="1E" value="Advanced">
  <button type="submit" id="saveBtn">Save</button>
-<button type="submit" id="setBtn">Set</button>
+<button type="submit" id="resetBtn">reset</button>
 <p id="output">Output</p>
 
 
