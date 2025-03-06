@@ -5,4 +5,4 @@ def main():
     print(f"{X} + {Y} is {X * Y}")
 
 if __name__ == '__main__':
-    main()dxc
+    main()
