@@ -27,10 +27,13 @@
             })
 
             reset.addEventListener("click",(event)=>{
-                checkedInputs.textContent
-                JSON.parse
-                console.log(checkedInputs)
-
+                const checked = output.textContent
+                const checked_array = JSON.parse(checked)
+                console.log(checked_array)
+                checked_array.forEach((element)=>{
+                    let El = document.getElementById(element.id)
+                    El.checked = true
+                })
             })
         })
     </script>

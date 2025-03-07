@@ -5,15 +5,15 @@
     <title>Title</title>
     <script>
         document.addEventListener("DOMContentLoaded", (evt)=>{
-            const name = document.getElementById("name")
+            const name = document.getElementById("name") // { this is grabbing the elements by their ids, and they are putting it in a variable so they can just grab whatever is in that.
             const output = document.getElementById("output")
-            const submit = document.getElementById("submit")
+            const submit = document.getElementById("submit") // }
 
-            submit.addEventListener("click",(event)=>{
-               const boom = "Hi, " +  name.value  + ", Type stuff?"
-                    output.textContent = boom
-                console.log(boom)
-            })
+            submit.addEventListener("click",(event)=>{ // adding an event listener to out submit button
+               const boom = "Hi, " +  name.value  + ", Type stuff?" // creating a variable with the name of boom, its taking the value inside the variable of name and writing things next to it.
+                    output.textContent = boom // taking the text content thats in output and making it print out whats in boom
+                console.log(boom) // console logging boom
+            }) // this is where the event listener ends
         })
     </script>
 </head>
