@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age Checker</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", (evt)=>{
+            const age = document.getElementById("UserAge")
+            const AgeCheck = document.getElementById("CheckAge")
+            let messageOutput = document.getElementById("output")
+
+            AgeCheck.addEventListener("click", (evt)=>{
+                let age_Input = parseInt(age.value)
+                if (age_Input < 14 ) {
+                    messageOutput.textContent = "Your either too young to be in high school or your in 9th grade."
+                } else if (age_Input  < 16) {
+                    messageOutput.textContent = "Your either a Sophomore or Junior."
+                } else if (age_Input >= 18) {
+                    messageOutput.textContent = "Okay unc get a job."
+                } else if (age_Input >= 19) {
+                    messageOutput.textContent = "Put the fries in the bag unc."
+                } else {
+                    messageOutput.textContent = "Start a family big bro"
+                }
+                console.log(age_Input)
+            })
+        })
+    </script>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <label for="UserAge"></label>
+    <input type="text" id="UserAge">
+    <button id="CheckAge">Check Age</button>
+    <h2 id="output"></h2>
+</main>
+<footer>
+    @bendjyofc
+</footer>
+</body>
+</html>
