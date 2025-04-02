@@ -15,6 +15,14 @@
             const b7 = document.getElementById("7")
             const b8 = document.getElementById("8")
             const b9 = document.getElementById("9")
+            const BtnCon = document.getElementById("Container")
+            const select = document.getElementById("sel")
+            const start = document.getElementById("start")
+            let X = "foo"
+            start.addEventListener("click", (ev)=>{
+                X = select.options[select.selectedIndex].textContent;
+            })
+
 
             const TopRow = []
             const MiddleRow = []
@@ -24,6 +32,18 @@
             const RightCol = []
             const DwnRight = []
             const DwnLeft = []
+
+            BtnCon.addEventListener("click", (ev)=>{
+                ev.target.textContent = X
+
+                if (X == "X"){
+                    X = "O"
+                } else{
+                    X = "X"
+                }
+
+
+            })
         })
     </script>
 </head>
@@ -32,17 +52,25 @@
 
 </header>
 <main>
-    <div class="ttt">
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button><br>
-        <button id="4">4</button>
-        <button id="5">5</button>
-        <button id="6">6</button><br>
-        <button id="7">7</button>
-        <button id="8">8</button>
-        <button id="9">9</button>
+    <div id="Container">
+        <button data-name = "foo" id="1">1</button>
+        <button data-name = "foo" id="2">2</button>
+        <button data-name = "foo" id="3">3</button><br>
+        <button data-name = "foo" id="4">4</button>
+        <button data-name = "foo" id="5">5</button>
+        <button data-name = "foo" id="6">6</button><br>
+        <button data-name = "foo" id="7">7</button>
+        <button data-name = "foo" id="8">8</button>
+        <button data-name = "foo" id="9">9</button>
     </div>
+    <label>Who goes first</label><br>
+
+    <button id="start">Start game</button>
+    <br>
+    <select id="sel">
+        <option value="1">X</option>
+        <option value="2">O</option>
+    </select>
 
 </main>
 <footer>
