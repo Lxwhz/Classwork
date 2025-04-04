@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>
+    <h1>JavaScript HTML DOM</h1>
+</header>
+<main>
+  <p>batman</p>
+
+  <div id="div1">
+    <p id="p1">para 1</p>
+    <p id="p2">Para 2</p>
+    <script>
+        const para = document.createElement("p");
+        const text = document.createTextNode("Type.");
+        const body = document.getElementsByTagName("body")[0]
+
+        para.appendChild(text);
+        const elem = document.getElementById("div1");
+        elem.appendChild(para);
+
+
+        const ol = document.createElement("ol")
+        const li = document.createElement("li")
+        const li1 = document.createElement("li")
+        const li2 = document.createElement("li")
+
+        ol.appendChild(li)
+        ol.appendChild(li1)
+        ol.appendChild(li2)
+        body.appendChild(ol)
+
+        const text1 = document.createTextNode("Solo Leveling")
+        li.appendChild(text1)
+
+        const text2 = document.createTextNode("Black Clover")
+        li1.appendChild(text2)
+
+        const text3 = document.createTextNode("2012")
+        li2.appendChild(text3)
+    </script>
+</main>
+<footer>
+  @bendjyofc
+</footer>
+</body>
+</html>
