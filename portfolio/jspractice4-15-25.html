@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", (event)=>{
+      const state = document.getElementById("State")
+      const stuff = document.getElementById("Stuff")
+      const reco = document.getElementById("College_Reco")
+      const btn = document.getElementById("btn")
+      let message = "No Message"
+
+      btn.addEventListener("click", (event)=>{
+        const states = state.options[state.selectedIndex].value
+        const majors = stuff.options[stuff.selectedIndex].value
+        console.log(states)
+        console.log(majors)
+        if (states === "C" && majors !== "G"){
+          message = "You should check out UC Santa Cruz. Go Banana Slugs!"
+        } else if (states === "NC" && majors !== "G"){
+          message = "You should check Shaw University! Go Bears!"
+        } else if (states === "P" && majors !== "G"){
+          message = "You should check out UC Santa Cruz. Go Banana Slugs!"
+        }
+         else if (states !== "G") {
+          message = "You should check out Delft University of Technology. Go Bolt!"
+        }
+         reco.textContent = message
+        console.log(message)
+      })
+
+    })
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Colleges</h1>
+  </header>
+    <main>
+
+      <br>
+      <label for="State">What state would you like to go to college?</label>
+      <br>
+        <select id="State">
+          <option value="C">California</option>
+          <option value="NC">North Carolina</option>
+          <option value="P">Pennsylvania</option>
+        </select>
+      <br>
+      <label for="Stuff">What do you want to study?</label>
+      <br>
+      <select id="Stuff">
+        <option value="G">Gaming</option>
+        <option value="L">Law</option>
+        <option value="CS">Computer Science</option>
+      </select>
+      <br>
+    <button id="btn">Get college recommendation</button>
+      <h2 id="College_Reco"></h2>
+    </main>
+  <footer>
+  </footer>
+</body>
+</html>
