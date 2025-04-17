@@ -13,12 +13,19 @@
             const text2 = document.createTextNode("Shower");
             const text3 = document.createTextNode("Eat breakfast");
 
+            li1.appendChild(text1)
+            li2.appendChild(text2)
+            li3.appendChild(text3)
 
-            // test down here
+            const ol =  document.createElement("ol")
 
-            function MultiHtmlElm(li1, li2, li3){
-                return
-            }
+            ol.appendChild(li1)
+            ol.appendChild(li2)
+            ol.appendChild(li3)
+
+            const main = document.getElementById("JS")
+
+            main.appendChild(ol)
         })
     </script>
 </head>
@@ -26,7 +33,7 @@
 <header>
     <h1>JS Pract4</h1>
 </header>
-<main>
+<main id="JS">
 
 </main>
 <footer>
