@@ -8,6 +8,11 @@
         document.addEventListener("DOMContentLoaded", (event)=>{
             const table = document.createElement("table")
             const body = document.getElementById("body")
+            const btn = document.getElementById("btn")
+            const ARow = document.getElementById("rows")
+            const AColumns = document.getElementById("columns")
+
+            console.log(ARow)
 
             for(let i = 0; i < 3; i++){
                 let row = document.createElement("tr")
@@ -28,7 +33,13 @@
 
 </header>
 <main>
+<input type="number" id="rows">
+<label for="rows">Rows</label><br>
 
+<input type="number" id="columns">
+<label for="columns">Columns</label><br>
+
+<button id="btn">Press</button>
 </main>
 <footer>
 @bendjyofc
