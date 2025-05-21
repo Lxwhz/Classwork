@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Permanent+Marker&display=swap');
+p, .Geek6{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 60px;
+    padding: 0;
+    text-align: left;
+    font-size: 50px;
+    line-height: 70px;
+}
+
 h1 {
+    font-family: "Joti One", serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 100px;
 }
 
-button, footer, #boom {
+button, footer, #boom{
     margin: 0;
     padding: 0;
     text-align: center;
@@ -13,44 +29,20 @@ button, footer, #boom {
     border-radius: 12px;
 }
 
-#Geek {
-    margin: 10px 60px;
-    padding: 0;
-    text-align: left;
+table {
+    margin:95px;
     font-size: 50px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
 }
 
-#Geek2 {
-    margin: 10px 60px;
-    padding: 0;
+td, th {
+    border: 1px solid #dddddd;
     text-align: left;
-    font-size: 50px;
+    padding: 8px;
 }
 
-#Geek3 {
-    margin: 10px 60px;
-    padding: 0;
-    text-align: left;
-    font-size: 50px;
-}
-
-#Geek4 {
-    margin: 10px 60px;
-    padding: 0;
-    text-align: left;
-    font-size: 50px;
-}
-
-#Geek5 {
-    margin: 10px 60px;
-    padding: 0;
-    text-align: left;
-    font-size: 50px;
-}
-
-.Geek6 {
-    margin: 10px 60px;
-    padding: 0;
-    text-align: left;
-    font-size: 50px;
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
