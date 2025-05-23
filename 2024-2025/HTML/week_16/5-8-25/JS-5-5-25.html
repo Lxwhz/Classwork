@@ -7,39 +7,47 @@
     <script>
         document.addEventListener("DOMContentLoaded", (event)=>{
             const table = document.createElement("table")
-            const body = document.getElementById("body")
+            const tableCont = document.getElementById("tableContain")
             const btn = document.getElementById("btn")
             const ARow = document.getElementById("rows")
             const AColumns = document.getElementById("columns")
 
-            console.log(ARow)
 
-            for(let i = 0; i < 3; i++){
-                let row = document.createElement("tr")
-                table.appendChild(row)
-                for(let j = 0; j < 3; j++){
-                    const data = document.createElement("td")
-                    row.appendChild(data)
+            btn.addEventListener("click", (ev)=>{
+               const msg = document.createTextNode("Table Goes Here")
+                table.innerHTML = ""
+
+                for(let i = 0; i < ARow.value; i++){
+                    let row = document.createElement("tr")
+                    table.appendChild(row)
+                    for(let j = 0; j < AColumns.value; j++){
+                        const data = document.createElement("td")
+                        row.appendChild(data)
+                    }
                 }
-            }
+                tableCont.appendChild(table)
 
-            body.appendChild(table)
+            })
+
 
         })
     </script>
 </head>
-<body id="body">
+<body>
 <header>
 
 </header>
 <main>
-<input type="number" id="rows">
-<label for="rows">Rows</label><br>
+    <div id="tableContain">
 
-<input type="number" id="columns">
-<label for="columns">Columns</label><br>
+    </div>
+    <input type="number" id="rows">
+    <label for="rows">Rows</label><br>
 
-<button id="btn">Press</button>
+    <input type="number" id="columns">
+    <label for="columns">Columns</label><br>
+
+    <button id="btn">Press</button>
 </main>
 <footer>
 @bendjyofc

@@ -1,8 +1,6 @@
 table {
     border: 1px solid black;
     margin: 40px auto;
-    width: 400px;
-    height: 400px;
 }
 
 td, tr{
