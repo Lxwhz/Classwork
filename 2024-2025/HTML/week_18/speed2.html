@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+       document.addEventListener("DOMContentLoaded", (ev)=>{
+           const body = document.getElementById("body")
+           const ol = document.createElement("ol")
+           const li1 = document.createElement("li")
+           const li2 = document.createElement("li")
+           const li3 = document.createElement("li")
+           const TN1 = document.createTextNode("Item 1")
+           const TN2 = document.createTextNode("Item 2")
+           const TN3 = document.createTextNode("Item 3")
+
+           body.appendChild(ol)
+           ol.appendChild(li1)
+           ol.appendChild(li2)
+           ol.appendChild(li3)
+           li1.appendChild(TN1)
+           li2.appendChild(TN2)
+           li3.appendChild(TN3)
+       })
+    </script>
+</head>
+<body id="body">
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+    </tr>
+
+    <tr>
+        <th>Header 2</th>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+    </tr>
+</table>
+</body>
+</html>
