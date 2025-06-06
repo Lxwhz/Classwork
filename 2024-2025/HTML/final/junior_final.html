@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="junior_file.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", (ev)=>{
+      const submit = document.getElementById("Submit")
+      const output = document.getElementById("output")
+
+      submit.addEventListener("click",(ev)=>{
+        alert(output.textContent = "You have submitted the address form.")
+      })
+    })
+  </script>
+</head>
+<body>
+<header>
+  <h1>I'm the biggest header</h1>
+  <h2>I'm the next biggest header</h2>
+</header>
+<main>
+  <table>
+    <tr>
+      <th>Table Header</th>
+      <th>Table Header</th>
+      <th>Table Header</th>
+    </tr>
+    <tr>
+      <td>Table Data</td>
+      <td>Table Data</td>
+      <td>Table Data</td>
+    </tr>
+    <tr>
+      <td>Table Data</td>
+      <td>Table Data</td>
+      <td>Table Data</td>
+    </tr>
+  </table>
+  <h3>I'm the third biggest header</h3>
+  <ol type="a">
+   <li> List item 1
+     <li> List item 2
+    <li> List item 3
+     <ol type="i">
+       <li>
+         Nested item 1
+         <li> Nested item 2
+     </ol>
+   </li>
+  </ol>
+  <h3>I'm also the third biggest header</h3>
+  <form>
+    <fieldset>
+      <legend>Address Form</legend>
+      <div>
+    <label for="streetAddress">Street Address</label><br>
+    <input type="text" id="streetAddress" name="streetAddress">
+      </div>
+    <br>
+      <div>
+    <label for="city">City</label><br>
+    <input type="text" id="city" name="city">
+      </div>
+    <br>
+      <div>
+    <label> State
+      <br>
+      <select>
+        <option>Massachusetts</option>
+        <option>Maine</option>
+        <option>Vermont</option>
+        <option>New Hampshire</option>
+      </select>
+    </label>
+      </div>
+    <br>
+      <div>
+    <label for="zip_Code">Zip Code</label><br>
+    <input type="text" id="zip_Code" name="zip_Code">
+      </div>
+      <br>
+      <button id="Submit" type="submit">Submit Form</button>
+      <p id="output"></p>
+    </fieldset>
+  </form>
+  <a href="https://Boston.com">I'm a link to Boston.com</a>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
