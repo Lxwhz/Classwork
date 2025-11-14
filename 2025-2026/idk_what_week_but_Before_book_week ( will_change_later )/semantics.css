@@ -1,0 +1,23 @@
+body {
+    padding: 20px;
+}
+
+.box {
+    border: 4px dashed purple;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.inside_box {
+    border: 4px dashed purple;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+nav {
+    margin-right: 10px;
+}
+
+h1,h2,h3 {
+    margin-top: 0;
+}
