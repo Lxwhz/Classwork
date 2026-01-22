@@ -1,0 +1,20 @@
+header {
+    border: purple dotted 5px;
+}
+
+nav {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border: purple dotted 5px;
+}
+
+main {
+    border: purple dotted 5px;
+}
+
+h2, article, section {
+    border: purple dotted 5px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
