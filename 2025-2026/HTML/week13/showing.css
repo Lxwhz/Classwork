@@ -1,0 +1,12 @@
+body {
+    border: solid black 1px;
+    margin: 0;
+}
+
+header, nav, footer,article,section {
+    border: solid black 1px;
+    padding: 20px;
+    text-align: center;
+
+}
+
