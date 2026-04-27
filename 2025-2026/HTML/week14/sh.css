@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Card {
+    width: 500px;
+    height: 500px;
+    border-radius: 3px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+p {
+
+}
