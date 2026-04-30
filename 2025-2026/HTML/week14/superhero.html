@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="sh.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", (ev)=>{
+            const submit = document.getElementById("button")
+            const output = document.getElementById("output")
+
+            submit.addEventListener("click", (ev)=>{
+                alert(output.textContent = "You Have Submitted This Form, Good Luck!")
+            })
+        })
+    </script>
 </head>
 <body>
 <header>
@@ -222,7 +232,7 @@
             <legend>Join The Cardinals Today!</legend>
             <fieldset>
             <div>
-                <label for="name">What is your name? :</label>
+                <label for="name">What is your name & last Name? :</label>
                 <br>
                 <input type="text" id="name" name="name_hero">
             </div>
@@ -248,9 +258,13 @@
             <br>
             <fieldset>
             <div>
-                <label for="strengths">What are your Strengths? :</label>
-                <br>
-                <input type="text" id="strengths" name="strengths_hero">
+                <select>
+                    <option>Super Strength</option>
+                    <option>Super Speed</option>
+                    <option>Inf regen/healer</option>
+                    <option>Shield bearer</option>
+                    <option>Tank</option>
+                </select>
             </div>
             </fieldset>
                 <br>
@@ -277,6 +291,9 @@
                 <input type="text" id="abilities" name="abilities_hero">
             </div>
             </fieldset>
+            <br>
+            <button id = button type="button">Submit!</button>
+            <p id="output"></p>
         </fieldset>
     </form>
 </main>
